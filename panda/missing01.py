@@ -1,0 +1,28 @@
+import numpy as np
+import pandas as pd
+
+d = {'A':[1,2,np.nan], 'B':[5,np.nan,np.nan], 'C':[1,2,3]}
+df = pd.DataFrame(d)
+print("d:")
+print(d)
+print("df:")
+print(df)
+print("----------------")
+print("df.dropna()")
+print(df.dropna())
+print("----------------")
+print("df.dropna(axis=1)")
+print(df.dropna(axis=1))
+print("----------------")
+print("df.dropna(thresh=2)")
+print(df.dropna(thresh=2))
+print("----------------")
+print("df.dropna(thresh=1)")
+print(df.dropna(thresh=1))
+print("----------------")
+print("df.fillna(value='V')")
+print(df.fillna(value='V'))
+print("----------------")
+print("df['A'].fillna(df['A'].mean())")
+print(df['A'].fillna(df['A'].mean()))
+print("----------------")

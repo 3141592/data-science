@@ -1,0 +1,38 @@
+import numpy as np
+
+print("========================================")
+arr = np.array([[5,10,15,20],[20,25,30,35],[30,35,40,45]])
+print(arr)
+print("========================================")
+print(arr[0][0])
+print(arr[0])
+print("========================================")
+print(arr[2,1])
+print("========================================")
+print(arr[:2,1:])
+print("========================================")
+arr2 = np.arange(1,11)
+print(arr2)
+bool_arr2 = arr2 > 5
+print("bool_arr2: ")
+print(bool_arr2)
+print("========================================")
+print("arr2[bool_arr2]:")
+print(arr2[bool_arr2])
+print("========================================")
+bool_arr = [False,False,False,False,False,True,True,True,True,True]
+print("bool_arr: ")
+print(bool_arr)
+print("arr2[bool_arr]:")
+print(arr2[bool_arr])
+print("========================================")
+print(arr[arr > 30])
+print(arr2[arr2 > 30])
+print("========================================")
+arr3 = np.arange(50).reshape(5,10)
+print(arr3)
+print("========================================")
+print(arr3[1:4,2:7])
+print("========================================")
+
+
